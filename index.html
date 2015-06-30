@@ -1,0 +1,78 @@
+<html>
+<head>
+	<neta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<h1 class="text-center">To Do List</h1>
+			<hr>
+			<form class="text-center" id="new-item">
+					<div class="form-group">
+					<input type="text" class="form-control" id="item-name" placeholder="what would you like to do?" autofocus>
+					</div>
+					<div class="form-group">
+					<input type="text" class="form-control" id="description" placeholder="tell me about it!" autofocus>
+					</div>
+					<div>
+					<input type="submit" class="btn btn-success" value="Add to the List">
+				</div>
+			</form>
+			<hr>
+			<ul id="tasks" class="sortable">
+				<li class='taskitem'> Title: gym
+					<p>Description:  got to pump it up</p>
+						<div class="editform">
+						<div class="form-group">
+						<input type="text" class="form-control" id="new-item-name" placeholder="edit title" autofocus>
+						</div>
+						<div class="form-group">
+						<input type="text" class="form-control" id="newdescription" placeholder="edit description" autofocus>
+						</div>
+						</div>
+						<input type="submit" class="btn btn-success editbtn" value="Edit">
+
+					<button id="done" type="button" class="btn btn-default">Done</button>
+					</li>
+				<li class='taskitem'> Title:  tan
+					<p>Description:  get dark</p>
+						<div class="editform">
+						<div class="form-group">
+						<input type="text" class="form-control" id="new-item-name" placeholder="edit title" autofocus>
+						</div>
+						<div class="form-group">
+						<input type="text" class="form-control" id="newdescription" placeholder="edit description" autofocus>
+						</div>
+						</div>
+						<input type="submit" class="btn btn-success editbtn" value="Edit">
+						<button id="done" type="button" class="btn btn-default">Done</button>	
+					</li>
+				<li class='taskitem'> Title: laundry
+					<p>Description:  fresh clothing</p>
+						<div class="editform">
+						<div class="form-group">
+						<input type="text" class="form-control" id="new-item-name" placeholder="edit title" autofocus>
+						</div>
+						<div class="form-group">
+						<input type="text" class="form-control" id="newdescription" placeholder="edit description" autofocus>
+						</div>
+						</div>
+						<input type="submit" class="btn btn-success editbtn" value="Edit">
+					<button id="done" type="button" class="btn btn-default">Done</button>
+					</li>
+			</ul>	
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
